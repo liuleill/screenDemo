@@ -1,0 +1,113 @@
+.screen {
+  width: 100%;
+  height: 100vh;
+  background-color: #182740;
+  overflow: hidden;
+}
+.header {
+  height: 100px;
+  padding: 0 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3581e4;
+}
+.header .line {
+  width: 2px;
+  height: 48px;
+  margin: 0 30px;
+  background-color: #fff;
+  border-radius: 1px;
+}
+.header .side {
+  display: flex;
+  align-items: center;
+}
+.header .side .text {
+  color: #ffffff;
+  font-size: 42px;
+  /* font-weight: 700; */
+}
+.header .logo {
+  width: 346px;
+  height: 64px;
+}
+.header .logo img {
+  width: 100%;
+  height: 100%;
+}
+.list {
+  width: 100%;
+  height: calc(100vh - 100px);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border-collapse: collapse;
+  font-size: 42px;
+}
+.list ul {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.list ul .first {
+  width: 11%;
+  text-align: center;
+}
+.list ul .second {
+  width: 34%;
+}
+.list ul .third,
+.list ul .fourth {
+  width: 21%;
+}
+.list ul .fifth {
+  width: 13%;
+}
+.list .thead {
+  background-color: #101b2c;
+}
+.list .thead li {
+  padding-top: 17px;
+  padding-bottom: 24px;
+  color: #3581e4;
+  font-weight: 400;
+}
+.list .tbody {
+  flex: 1;
+  overflow: hidden;
+  /* 清除滚动框 */
+  /* 清除滚动框结束 */
+}
+.list .tbody ul {
+  min-height: 148px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.list .tbody ul:nth-child(odd) {
+  background-color: #182740;
+}
+.list .tbody ul:nth-child(even) {
+  background-color: #152339;
+}
+.list .tbody ul li {
+  padding: 18.5px 0;
+}
+.list .tbody ul .text {
+  padding-right: 60px;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.list .tbody ul .redText {
+  color: #eb5b5b;
+}
+.list .null-data {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
